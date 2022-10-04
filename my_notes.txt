@@ -1,0 +1,8 @@
+Docker build
+docker build -t flask-smorest-api .
+
+run docker
+docker run -dp 5005:5000 flask-smorest-api
+
+docker run with volume
+docker run -dp 5005:5000 -w /app -v "$(pwd):/app" flask-smorest-api
